@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Kỷ niệm chuyến đi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- TIÊU ĐỀ -->
+  <div class="title-box">
+  <h1>Chuyến phiêu lưu KDL Bửu Long</h1>
+  <p class="subtitle">cùng tổ chức Áo Đen</p>
+
+  <div class="info">
+    <p>👤 Người dẫn đoàn: <b>Bùi Đỗ Tiến Đức</b></p>
+    <p>📸 Thợ chụp ảnh: <b>Bùi Đỗ Tiến Đức</b>, <b>Trần Viết An Phú</b></p>
+    <p>🎥 Thợ quay phim: 
+  <b>Nguyễn Đình Phúc</b>, 
+  <b>Nghiêm Bảo Khang</b>, 
+  <b>Nguyễn Lộc</b>
+</p>
+</div>
+
+
+  <!-- GHI CHÚ 1 2 3 4 -->
+  <div class="note-box">
+    <p>1️⃣ Chuyến phiêu lưu KDL Bửu Long cùng tổ chức Áo Đen</p>
+    <p>2️⃣ Tàu lượn siêu tốc</p>
+    <p>3️⃣ Ngựa kéo quân</p>
+    <p>4️⃣ Xe điện đụng & Phi thuyền bay</p>
+  </div>
+
+  <!-- IMAGE -->
+  <h2>📸 Hình ảnh</h2>
+
+<div class="news-image"><img src="media/anh1.jpg"></div>
+<div class="news-image"><img src="media/anh2.jpg"></div>
+<div class="news-image"><img src="media/anh3.jpg"></div>
+<div class="news-image"><img src="media/anh4.jpg"></div>
+<div class="news-image"><img src="media/anh5.jpg"></div>
+<div class="news-image"><img src="media/anh6.jpg"></div>
+<div class="news-image"><img src="media/anh7.jpg"></div>
+<div class="news-image"><img src="media/anh8.jpg"></div>
+<div class="news-image"><img src="media/anh9.jpg"></div>
+<div class="news-image"><img src="media/anh10.jpg"></div>
+<div class="news-image"><img src="media/anh11.jpg"></div>
+<div class="news-image"><img src="media/anh12.jpg"></div>
+<div class="news-image"><img src="media/anh13.jpg"></div>
+
+
+
+  <!-- NỘI DUNG -->
+  <div class="content-box">
+    <p>
+      Chuyến đi này không chỉ là vui chơi, mà còn là những khoảnh khắc
+      tụi em cùng cười, cùng đi, cùng lưu lại một phần tuổi trẻ.
+    </p>
+  </div>
+
+
+  <!-- CẢM NHẬN -->
+  <div class="feeling">
+    <p>
+      Có những ngày trôi qua rất nhanh,
+      nhưng ký ức thì ở lại rất lâu.
+    </p>
+  </div>
+
+  <!-- BÀI THƠ -->
+  <div class="poem">
+    <p>
+      Một chuyến đi, vài triệu kỷ niệm<br>
+      Nắng, gió, tiếng cười còn vẹn nguyên<br>
+      Mai này mỗi đứa một con đường<br>
+      Nhưng đã từng, ta ở cạnh bên.
+    </p>
+  </div>
+
+</div>
+<!-- Hộp hỏi bật nhạc -->
+<div id="musicBox">
+  <div class="musicContent">
+    <p>Bạn có muốn nghe thêm nhạc không?</p>
+    <button onclick="playMusic()">Có</button>
+    <button onclick="closeBox()">Không</button>
+  </div>
+</div>
+
+<audio id="bgMusic" loop>
+  <source src="phep-mau.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  function playMusic() {
+    document.getElementById("bgMusic").play();
+    document.getElementById("musicBox").style.display = "none";
+  }
+
+  function closeBox() {
+    document.getElementById("musicBox").style.display = "none";
+  }
+</script>
+
+</body>
+</html>
